@@ -1,8 +1,12 @@
-package io.outright.moshimosh;
+package io.outright.moshimosh.service;
 
-public class MoshimoshServiceImpl implements MoshimoshService {
+import io.outright.moshimosh.util.Slug;
+
+public class HelloService implements Service {
+
     @Override
-    public String hello(String name) {
-        return "Hello, " + name;
+    public String hello(String raw) {
+        Slug name = new Slug(raw, "moshimosh");
+        return "Hello, " + name +"!";
     }
 }

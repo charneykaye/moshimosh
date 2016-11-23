@@ -6,7 +6,7 @@
     <!-- taken from https://github.com/google/guice/wiki/Servlets -->
 
     <listener>
-        <listener-class>io.outright.moshimosh.MoshimoshServletConfig</listener-class>
+        <listener-class>io.outright.moshimosh.ServletConfig</listener-class>
     </listener>
 
     <filter>

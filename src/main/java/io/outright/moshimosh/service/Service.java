@@ -1,5 +1,5 @@
-package io.outright.moshimosh;
+package io.outright.moshimosh.service;
 
-public interface MoshimoshService {
+public interface Service {
     String hello(String name);
 }
