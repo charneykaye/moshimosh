@@ -6,7 +6,7 @@ public class HelloService implements Service {
 
     @Override
     public String hello(String raw) {
-        Slug name = new Slug(raw, "moshimosh");
+        Slug name = new Slug(raw, "moshimosh").Propercase();
         return "Hello, " + name +"!";
     }
 }

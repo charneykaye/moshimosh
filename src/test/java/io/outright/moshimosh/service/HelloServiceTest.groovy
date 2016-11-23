@@ -1,5 +1,7 @@
 package io.outright.moshimosh.service
 
+import org.junit.Test
+
 // Copyright (c) 2016, Outright Mental Inc. (http://outright.io) All Rights Reserved.
 class HelloServiceTest extends GroovyTestCase {
     void setUp() {
@@ -11,7 +13,8 @@ class HelloServiceTest extends GroovyTestCase {
 
     }
 
+    @Test
     void testHello() {
-        assert new HelloService().hello("nubbub 15%").toString() == "Hello, nubbub15!";
+        assert new HelloService().hello("nuBBub 15%").toString() == "Hello, Nubbub15!";
     }
 }

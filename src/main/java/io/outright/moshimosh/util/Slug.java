@@ -19,6 +19,11 @@ public class Slug {
         this.text = slug.length() > 0 ? slug : defaultValue;
     }
 
+    public Slug Propercase() {
+        String lower = this.text.toLowerCase();
+        return new Slug(lower.substring(0, 1).toUpperCase() + lower.substring(1));
+    }
+
     @Override
     public String toString() {
         return this.text;
