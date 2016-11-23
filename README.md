@@ -1,3 +1,3 @@
 # Moshimosh!
 
-https://moshimosh.outright.io
+http://moshimosh.outright.io
