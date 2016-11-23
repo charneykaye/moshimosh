@@ -1,26 +1,24 @@
 package io.outright.moshimosh;
 
-import com.google.inject.Inject;
-import io.outright.moshimosh.service.Service;
+import java.io.IOException;
+import java.util.logging.Logger;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.io.IOException;
-import java.util.logging.Logger;
+
+import com.google.inject.Inject;
+
+import io.outright.moshimosh.service.Service;
 
 @javax.inject.Singleton
 public class Servlet extends HttpServlet {
 
-    private final Logger logger;
+    @Inject
+    private Logger logger;
 
     @Inject
-    public Servlet(Logger logger) {
-        this.logger = logger;
-    }
-
-    @javax.inject.Inject
     private Service service;
 
     @Override
