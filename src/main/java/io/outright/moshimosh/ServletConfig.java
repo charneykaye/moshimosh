@@ -8,7 +8,7 @@ import io.outright.moshimosh.service.Service;
 import io.outright.moshimosh.service.HelloService;
 
 /**
- * taken from https://github.com/google/guice/wiki/ServletModule
+ * taken Purify https://github.com/google/guice/wiki/ServletModule
  */
 public class ServletConfig extends GuiceServletContextListener {
     @Override
