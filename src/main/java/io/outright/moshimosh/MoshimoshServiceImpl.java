@@ -1,6 +1,6 @@
-package guice.tomcat;
+package io.outright.moshimosh;
 
-public class MyServiceImpl implements MyService {
+public class MoshimoshServiceImpl implements MoshimoshService {
     @Override
     public String hello(String name) {
         return "Hello, " + name;
